@@ -1,12 +1,10 @@
-class Book:
-    def __init__(self, title, author):
-        self.title = title
-        self.author = author
-        self.is_read = False  
+class Universitet:
+    def __init__(self, nomi, joylashuvi):
+        self.nomi = nomi
+        self.joylashuvi = joylashuvi
 
-    def mark_as_read(self):
-        self.is_read = True
-        print(f"📘 '{self.title}' o‘qilgan deb belgilandi")
+u1 = Universitet("TATU", "Toshkent")
+u2 = Universitet("NamDU", "Namangan")
 
-    def status(self):
-        print(f"{self.title} — {'O‘qilgan' if self.is_read else 'O‘qilmagan'}")
+print(u1.nomi, u1.joylashuvi)
+print(u2.nomi, u2.joylashuvi)

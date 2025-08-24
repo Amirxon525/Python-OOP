@@ -1,13 +1,9 @@
-class User:
-    def __init__(self, username, email, is_active):
-        self.username = username
-        self.email = email
-        self.is_active = is_active
+class Kitob:
+    def __init__(self, nomi, muallif):
+        self.nomi = nomi
+        self.muallif = muallif
 
-    def activate(self):
-        self.is_active = True
-        print("Foydalanuvchi faollashtirildi.")
-
-    def deactivate(self):
-        self.is_active = False
-        print("Foydalanuvchi bloklandi.")
+kit1 = Kitob("Otgan kunlar", "Abdulla Qodiriy")
+kit2 = Kitob("Mehrobdan chayon", "Pirimqul Qodirov")
+print(kit1.nomi, kit1.muallif)
+print(kit2.nomi, kit2.muallif)

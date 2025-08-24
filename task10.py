@@ -1,15 +1,10 @@
-class BankAccount:
-    def __init__(self, owner, balance):
-        self.owner = owner
-        self.balance = balance
+class Kompyuter:
+    def __init__(self, turi, operatsion_tizimi):
+        self.turi = turi
+        self.operatsion_tizimi = operatsion_tizimi
 
-    def deposit(self, amount):
-        self.balance += amount
-        print(f"Yangi balans: {self.balance}")
+kom1 = Kompyuter("Noutbuk", "Windows 11")
+kom2 = Kompyuter("Stol kompyuter", "Linux")
 
-    def withdraw(self, amount):
-        if self.balance >= amount:
-            self.balance -= amount
-            print(f"Yangi balans: {self.balance}")
-        else:
-            print("Xatolik: Mablag' yetarli emas.")
+print(kom1.turi,  kom1.operatsion_tizimi)
+print(kom2.turi,  kom2.operatsion_tizimi)

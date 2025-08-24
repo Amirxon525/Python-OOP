@@ -36,7 +36,7 @@
 * `email` — elektron pochta manzili
 * `is_active` — foydalanuvchi aktivmi (True/False)
 
-📝 **Talab:**
+📝 **Talab:** 
 
 * Ob’ekt yaratganda, barcha atributlar qiymatini olish kerak.
 * `is_active` uchun True yoki False qiymat kiritilsin.

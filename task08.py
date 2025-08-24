@@ -1,15 +1,11 @@
-class Product:
-    def __init__(self, name, price, category, in_stock):
-        self.name = name
-        self.price = price
-        self.category = category
-        self.in_stock = in_stock
+class Telefon:
+    def __init__(self, model, narx):
+        self.model = model
+        self.narx = narx
 
-    def check_stock(self):
-        if self.in_stock:
-            print(f"{self.name} omborda mavjud ")
-        else:
-            print(f"{self.name} hozirda tugagan ")
+tel1 = Telefon("iPhone 13", 9000000)
+tel2 = Telefon("Samsung A52", 4500000)
 
-p = Product("AirPods", 199.99, "electronics", True)
-p.check_stock()
+print(tel1.model, "narxi", tel1.narx, "sum")
+print(tel2.model, "narxi", tel2.narx, "sum")
+

@@ -1,12 +1,10 @@
-class Book:
-    def __init__(self, title, author, is_read=False):
-        self.title = title
-        self.author = author
-        self.is_read = is_read
+class Oquvchi:
+    def __init__(self, ism, sinf):
+        self.ism = ism
+        self.sinf = sinf
 
-    def mark_as_read(self):
-        self.is_read = True
-        print("Kitob o‘qilgan deb belgilandi")
+oq1 = Oquvchi("Ali", 9)
+oq2 = Oquvchi("Laylo", 10)
 
-    def status(self):
-        print("O‘qilgan" if self.is_read else "O‘qilmagan")
+print(oq1.ism,  oq1.sinf, "sinf")
+print(oq2.ism,  oq2.sinf, "sinf")
